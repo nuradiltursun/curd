@@ -14,9 +14,10 @@ create database students;
      email varchar(30) not null
  );
 
- SELECT * FROM person;
- DELETE FROM person WHERE id=:id
- INSERT INTO person (username,email) VALUES(:username,:email)
+ SELECT * FROM person;  //select
+ DELETE FROM person WHERE id=:id //delete
+ INSERT INTO person (username,email) VALUES(:username,:email)  //add
+ UPDATE person SET username=:username,email=:email WHERE id=:id  //alter
  
 ```
 用的是bootstrap，但额外的添加字体，
